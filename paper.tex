@@ -1,0 +1,77 @@
+\documentclass[11pt]{paper}
+\usepackage{graphicx}
+\begin{document}
+\title{Scripting Isn't Dead}
+\date{November 21, 2013}
+\author{Megan Stanforth}
+\maketitle
+\section{What is a Scripting Language and why do I have to know them?}
+
+\indent 
+Scripting languages are high-level programming languages that are interpreted at runtime. Unlike languages such as C and Java, scripting languages are not compiled by the computer’s processors but are used by another program. They are often embedded within other programs. Most commonly HTML to provide additional functionality to web pages. Therefore, the main purpose of a scripting language is not to build something such as an application but to allow existing code to work in a particular way or to allow for multiple different pieces of code to work together. A common example of this is a makefile. 
+
+
+\begin{figure}
+    \centering
+    \includegraphics[width=0.8\textwidth,natwidth=610,natheight=642]{PHP-Graph.jpg}
+\end{figure}
+
+
+\indent
+Decades ago programmers built algorithms and data structures from scratch. It was faster and allowed for complete control over a data set. As computers improved both in speed and power, scripting languages became more common. Programmers can afford less efficiency in order to use preexisting classes and functions. This greatly increases the speed at which a programmer can spit out a script. Aided by the change in software development, scripting languages are increasing in popularity. Programmers have less of a need to develop new software, and are finding themselves more likely to ``glue'' other projects together. 
+
+
+\section{Universally Useful Tools}
+
+Part of what makes scripting languages so useful is a wide variety of built in tools that provide diverse functionality common to everyday programming. Five of these tools are
+\begin{itemize}
+	\item Grep
+	\item Awk
+	\item Hashes
+	\item Foreach Loops
+	\item Sort
+\end{itemize}
+\indent
+Knowledge of these five tools allows a user to have control by being able to search, edit, sort, store, and then iterate through a data set. Individually each of these tools is very powerful, but together they allow for a programmer to have an incredibly simple but wide range of moment through a set of data.
+
+\section{Searching Files}
+Grep is a UNIX tool used for searching through files of regular expressions. Grep searches through files by comparing string. Like all UNIX commands, grep can be used with a serious of flags to control input and output making it easy to pipe results as input or output to other commands.
+
+\indent
+Grep comes automatically with a number of ways to customize search results in the form of flags such as searching numbers, printing leading or trailing lines, and being able to count results found. Compound searches are also allowed. 
+
+\indent
+Grep is useful not in just seeing if particular words exist in files but as a tool for pulling strings from a file and into a script to be used as data. A particularly useful example was in the first three assignments of this class when performing error checking on the database to see if duplicates existed. 
+
+\section{Editing Lines}
+Often times a programmer will want to pull apart a line of text using some sort of condition. One of the original line editors was awk. Once the most powerful way to edit scripts awk has since been expanded in more complete ways through perl and python. By default, awk splits up each line read using whitespace. This can be done to search for patterns and completing procedures. 
+
+\indent
+The complexity of awk statements is what makes it so powerful. Like grep, awk also has alternative forms all of which support a wide range of system variables and operators. 
+
+\section{Storing Data}
+Scripting languages are only useful if they can store, access and manipulate data. Hashes also referred to as associate arrays are an excellent way of storing data in an organized way.  They can be found as built in data types in UNIX, Perl, Python, and more. Hashes work differently from arrays by assigning a key and value pair. 
+
+\indent
+This benefits the programmer by being able to use the index as a variable to store information. Hashes have unlimited uses because items are constantly paired together: items to prices, numbers to names, etc. Hashes can be modified dynamically with the push and pop variables. This allows the programmer the freedom to not have to worry about running out of space or constricting variables to certain sizes. 
+
+
+\section{Iterating Through Data}
+Once data has been acquired and stored. A programmer might need to be able iterate through and manipulate that data one at a time. This can easily be done with a foreach loop. Since the item being iterated through defines the key, the foreach loop is not limited to certain data types. It can work on numbers, characters, hashes, arrays, and other pieces of data. 
+
+\indent
+Foreach loops are so popular and useful they are included in many Object Oriented Languages as well.
+
+\section{Sorting}
+If it wasn’t enough to be able to iterate one at a time through a list, the sort function can be used. Accompanied with the reverse function it can be used to organize data in numeric or alphabetic order. Like most other scripting language functions it can be built in and applied alongside other functions such as the foreach loop. 
+
+\indent
+Digging through the man page, sort can be a powerful tool allowing a user to organize by columns or fields as well as sort on multiple fields. 
+
+\section{Conclusion}
+Decades ago programmers built algorithms and data structures from scratch. It was faster and allowed for complete control over a data set. As computers improved both in speed and power, scripting languages became more common. Programmers can afford less efficiency in order to use preexisting classes and functions. This greatly increases the speed at which a programmer can spit out a script. Aided by the change in software development, scripting languages are increasing in popularity. Programmers have less of a need to develop new software, and are finding themselves more likely to ``glue'' other projects together. 
+
+
+\indent
+Having a diverse set of tools allows for programmers to quickly ``glue'' together projects to quickly and painlessly accomplish tasks. It does not require a long list of tools, just powerful ones that work together seamlessly. 
+\end{document}
